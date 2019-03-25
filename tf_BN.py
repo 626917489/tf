@@ -14,8 +14,8 @@ def fix_seed(seed=1):
     tf.set_random_seed(seed)
 
 
+# plot histogram for the inputs of every layer
 def plot_his(inputs, inputs_norm):
-    # plot histogram for the inputs of every layer
     for j, all_inputs in enumerate([inputs, inputs_norm]):
         for i, input in enumerate(all_inputs):
             plt.subplot(2, len(all_inputs), j*len(all_inputs)+(i+1))
